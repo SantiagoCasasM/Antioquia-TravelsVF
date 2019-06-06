@@ -1,0 +1,835 @@
+
+body{
+	font-family: Arial;
+	color: white;
+}
+.container{
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px; 
+}
+.titulos{
+	text-align: center;
+	color:green;
+	font-family: arial;
+	font-size: 40px;
+	-webkit-text-fill-color:orange;
+	-webkit-text-stroke:2px;
+	-webkit-text-stroke-color:green;
+
+}
+/*ESPACIO*/
+.barra_galeria{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	padding: 5px;
+	opacity: 0.7;
+	/*
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48f259+12,48f259+21,ff920a+62,ff920a+100 */
+	background: #48f259; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #48f259 12%, #48f259 21%, #ff920a 62%, #ff920a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #48f259 12%,#48f259 21%,#ff920a 62%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #48f259 12%,#48f259 21%,#ff920a 62%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48f259', endColorstr='#ff920a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+/* CARRUSEL 3D*/
+.content-all{
+    width: 210px;
+    height: 220px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+/*Botones Ver mas*/
+.botonv{
+	text-align: center;
+	padding-bottom: 20px;
+}
+/*SOCIAL BAR*/
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*CARDS*/
+.card{
+	color:black;
+	text-align: center;
+	float: left;
+	padding: 10px;
+	margin: 45px;
+	justify-content: center;
+	background: orange;
+	border: 2px solid green;
+	border-radius: 15px; 
+}
+
+.list-group-item{
+	justify-content: center;
+}
+.cardborde{
+	border-radius: 10px;
+	border: 2px green solid; 
+}
+h2{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color:white;
+	font-family: arial;
+}
+/*EFECTO PARALLAX Y BOTON*/
+.parallax-completo{
+	width: 100%;
+	height: 100px;
+	background-image: url('2.jpg');
+	background-position: cover;
+	background-repeat:no-repeat;
+}
+section{
+	width: 100%;
+	height:500px; 
+	padding: 0;
+	margin: 0;
+}
+
+#section1{
+	background-image: url('../img/Parralax/2.jpg');
+}
+
+#sep{
+	width: 220px;
+	height: 100px;
+	margin: auto;
+	padding: auto;
+}
+
+  .boton{
+  color:#fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: orange;
+  border: 2px solid;
+  border-color: orange;
+  position: relative;
+  border: 2px solid green;
+}
+.boton:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: white;
+  transition: all 1s ease;
+  opacity: 0.3;
+}
+.boton:hover:before {
+width: 100%;
+}
+/*MENU*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 5;
+}
+
+  .menu,
+    .submenu {
+    	margin: 1px solid orange;
+    	padding: 0;
+    	list-style: none;
+    }
+/* Main level */
+
+.menu {			
+	margin:4px;
+	width: 800px;
+	width: fit-content;	
+}
+
+.menu > li {
+	background: green;
+	float: left;
+	position: relative;
+	transform: skewX(25deg);
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+	margin: 1px;
+}		
+
+.menu li:hover {
+	background: orange;
+}		
+
+.menu > li > a {
+	transform: skewX(-25deg);
+	padding: 1em 2em;
+}
+
+/* Dropdown level*/
+.submenu {
+	position: absolute;
+	width: 200px;
+	left: 50%; margin-left: -100px;
+	transform: skewX(-25deg);
+	transform-origin: left top;
+}
+
+.submenu li {
+	background-color: green;
+	position: relative;
+	overflow: hidden;		
+}						
+
+.submenu > li > a {
+	padding: 1em 2em;			
+}
+
+.submenu > li::after {
+	content: '';
+	position: absolute;
+	top: -150%;
+	height: 100%;
+	width: 100%;			
+	box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+  .menu,
+    .submenu {
+    	margin: 0px;
+    	padding: 0;
+    	list-style: none;
+    }
+/* Main level */
+
+.menu {			
+	margin:0;
+	width: 800px;
+	width: fit-content;	
+}
+
+.menu > li {
+	background: green;
+	float: left;
+	position: relative;
+	transform: skewX(25deg);
+	margin: 1px;
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+}		
+
+.menu li:hover {
+	background: orange;
+}		
+
+.menu > li > a {
+	transform: skewX(-25deg);
+	padding: 1em 2em;
+}
+
+/* Dropdown level*/
+.submenu {
+	position: absolute;
+	width: 200px;
+	left: 50%; margin-left: -100px;
+	transform: skewX(-25deg);
+	transform-origin: left top;
+}
+
+.submenu li {
+	background-color: #34495e;
+	position: relative;
+	overflow: hidden;	
+	margin: 2px;	
+}						
+
+.submenu > li > a {
+	padding: 1em 2em;			
+}
+
+.submenu > li::after {
+	content: '';
+	position: absolute;
+	top: -125%;
+	height: 100%;
+	width: 100%;			
+	box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+	transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+	transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+	right: -50%;
+	transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+	transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+	transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+	left: -50%;
+	transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+	opacity: 0;
+	visibility: hidden;		
+}
+
+.submenu li {
+	transition: .2s ease-out transform;
+	background: green;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+	opacity: 1;
+	visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+	transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+	transform: skewX(-25deg) translateX(-15px);		
+}
+header{
+	padding: 0px;
+	margin-left: 220px;
+}
+/*FONDO DEGRADADO*/
+body{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8fc400+0,ea6d00+25,ea6d00+31,ea6d00+31,5c8e00+73,8fc400+87 */
+background: #8fc400; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #8fc400 0%, #ea6d00 25%, #ea6d00 31%, #ea6d00 31%, #5c8e00 73%, #8fc400 87%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #8fc400 0%,#ea6d00 25%,#ea6d00 31%,#ea6d00 31%,#5c8e00 73%,#8fc400 87%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #8fc400 0%,#ea6d00 25%,#ea6d00 31%,#ea6d00 31%,#5c8e00 73%,#8fc400 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#8fc400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#carouselExampleControls{
+	border-radius: 15px;
+}
+
+.logo1{
+	width: 160px;
+	height: 120px;
+	float: right;
+
+}
+
+.mision{
+	/*
+	background: orange;
+	*/
+	width: 100%;
+	height: 435px;
+	color: white;
+	border-radius: 15px; 
+	opacity: 0.8;
+}
+.vision{
+	width: 330px;
+	float: left;
+	padding: 20px;
+	margin: 23px;
+	background: black;
+	border: 2px green solid;
+	border-radius: 15px; 
+	opacity: 0.7; 
+}
+.vision h3{
+	color: orange;
+	text-align: center;
+}
+.video_uno{
+	width: 85%;
+	height: 460px;
+	padding: 50px;
+}
+.video_dos{
+	width: 100%;
+	height: 380px;
+	margin-left: 70px;
+
+}
+.border5{
+	border-radius: 15px;
+	width: 100%;
+	height: 200px;
+	border: 2px green solid;
+}
+/*CARROSEL*/
+.w-100{
+	border-radius: 25px;
+	border: 2px orange solid;
+}
+/*TRANSPORTE*/
+.fondotrans{
+	width: 30%;
+	background: orange;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	border-radius: 15px;
+	border: 2px green solid;
+}
+.hover-listas:hover{
+	background: green;
+	color:white;
+
+}
+.fondotitulotransporte{
+	text-align: center;
+	color: black;
+	margin-top:20px;
+}
+
+/*CARTAS QUE GIRAN*/
+.wrap{
+	width: 100%;
+	height: 970px;
+	margin: auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 80px;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+	float: left;
+}
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #F29720;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	border: 4px green solid;
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-family: "aria";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(img/1.jpg);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(img/2.jpg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(img/3.jpg);
+	background-size: cover;
+}
+.imagengira{
+	width: 100%;
+	height: 100%;
+	border: 2px orange solid;
+}
+.pesos{
+	color: green;
+}
+.titucartasgiran{
+	background: green;
+	text-align: center;
+	width: 100%;
+	border: 2px white solid;
+}
+
+/*PERFIL D EHOJA NOSOTROS*/
+.box{
+  width: 300px;px;
+  background: rgba(0, 0, 0,0.7);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'arial';
+  float: left;
+  margin: 38px;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px green solid;
+
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid orange;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h2{
+  font-size: 40px;
+  letter-spacing: 3px;
+  color:orange;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color:#1F69FC;
+}
+.box li .twitter:hover{
+	color:#58A6FE;
+}
+.representantes{
+	width: 100%;
+	height: 640px;
+}
+.cartasconten{
+	width: 100%;
+	height: 1860px;
+}
+.contentransporte{
+	width: 100%;
+	height: 2660px;
+}
+.box li .google:hover{
+	color: red;
+}
+.carritocompra{
+	padding: 35px;
+	margin: auto; 
+	width:30%;
+	border-radius: 15px;
+	border: 2px;
+}
+.table{
+	border: 2px orange solid;
+}
+.bordes{
+	border: 2px orange solid;
+
+}
+.Servicios{
+	text-align: center;
+}
+.carrito{
+	float: right;
+}
+.imagencarrito{
+	width: 100px;
+	height: 70px;
+	margin: auto;
+}
+/*RESPONSIVE*/
+@media screen and(max-width: ){
+	.fondotrans{
+
+	}
+}
+@media screen  and (max-width: 750px) {
+	.logo1{
+		width: 145px;
+		height: 120px;
+		margin-right: 5%;
+
+	}
+}
+@media screen and (max-width: 750px){
+	header{
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 750px){
+	section{
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.boton{
+		margin: auto;
+	}
+}
+
+/* RESPONSIVE DE MISION Y VISION HOJA NOSOTROS*/
+@media screen  and (max-width: 750px) {
+	 .mision{
+		widows: 300px;
+		height: 1050px;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.vision{
+		background: black;
+		opacity: 0.7;
+		color: white;
+		margin-left:50px; 
+	}
+}
+
+@media screen and (max-width: 750px){
+	.carta{
+		margin-left:80px;
+	}
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+@media screen and (max-width: 750px){
+	.wrap{
+		display: block;
+		width: 100%;
+		height: 2570px;
+		margin: auto;
+		padding:auto;
+	}
+}
+@media screen and (max-width: 750px){
+	.representantes{
+		width: 100%;
+		height: 695px;
+		margin-left: 40px;
+	}
+}
+@media screen and (max-width: 750px){
+	.cartasconten{
+		width: 100%;
+		height: 5600px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.contentransporte{
+		width: 100%;
+		height: 7300px;
+	}
+}
